@@ -52,7 +52,7 @@
 }
 
 .card {
-  display: flex;
+  display: none;
   width: 620px;
   align-items: center;
   margin-top: 40px;

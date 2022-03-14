@@ -3,7 +3,8 @@ import { useEffect, useState } from "react"
 
 function Card({ card, type }) {
 
-    const [display, setDisplay] = useState('flex')
+    const [display, setDisplay] = useState('none')
+
     const title = card.title.rendered
     const price = card.acf.price
     const content = card.content.rendered
