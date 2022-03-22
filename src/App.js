@@ -4,7 +4,6 @@ import './App.css';
 import Card from './components/Card';
 import CategoryButton from './components/CategoryButton';
 
-
 function App() {
   const server = 'https://dev.meta365.eu/wp-json/wp/v2/food?_fields=title,featured_media,content,acf,_links,_embedded&_embed'
 
@@ -24,7 +23,7 @@ function App() {
 
           result.map(element => {
             let category = element._embedded['wp:term'][0][0].name
-            if (asd.includes(category) == false) {
+            if (asd.includes(category) === false) {
               asd.push(category)
             }
           })
@@ -37,7 +36,6 @@ function App() {
 
   }, [])
 
-console.log(categories);
   return (
     <div className="App">
       <div className="title">

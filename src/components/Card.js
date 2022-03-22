@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 
-
 function Card({ card, type }) {
 
     const [display, setDisplay] = useState('none')
